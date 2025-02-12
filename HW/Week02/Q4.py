@@ -19,19 +19,17 @@ total_days = days_summant + days_sarah
 total_hours = hours_summant + hours_sarah
 total_minutes = minutes_summant + minutes_sarah
 
-total = (total_days * 24 * 60 * 60) + (total_hours * 60 * 60) + total_minutes
+total = (total_days * 24 * 60) + (total_hours * 60) + total_minutes
 
-days = total // (24 * 60 * 60)
+days = total // (24 * 60 )
 
-total -= days * (24 * 60 * 60)
+total -= days * (24 * 60 )
 
-hours = total // (60 * 60)
+hours = total // (60)
 
-total -= hours * (60 * 60)
+total -= hours * (60)
 
-minutes = total // 60
-
-total -= minutes
+minutes = total
 
 
 print("The total time both CAs worked togther is:", days, "days,", hours, "hours,", minutes, "minutes.")
