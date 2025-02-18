@@ -61,11 +61,16 @@ for letter in word:
 """
 for val in range(5, 10):
     print('wow')"""
-
+""""
 list = [2, 4, 6, 8, 10]
 
 num = 0
 for val in list:
     if val != 6:
         num = num + val
-print(num)
+print(num)"""
+
+for num in range(250, 300):
+    sum = num + num
+    print('The sum of',num,'is',sum)
+    
