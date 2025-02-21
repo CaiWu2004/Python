@@ -8,19 +8,28 @@ with anyone else, in conformance with the NYU School of engineering Policies and
 
 import math
 
+
 a_value = float(input("Please enter the value of a: "))
 b_value = float(input("Please enter the value of b: "))
 c_value = float(input("Please enter the value of c: "))
+my_discriminant = (math.sqrt(b_value ** 2 - 4 * a_value * c_value))
 
 if (a_value == 0):
-    if (b_value == 0):
-        if (c_value == 0):
-            print("Infinity Solution")
-        else:
-            print("No Solution")
-elif (a_value != 0):
-    if (b_value == 0):
-        if (c_value != 0):
-            print("No Real Solution")
+    if (b_value == 0) and (c_value == 0):
+        print("The Question has Infinity Solution")
+    else:
+        print("No Solution")
+elif my_discriminant == 0:
+    x1 = ((-b_value) + (math.sqrt(b_value ** 2 - 4 * a_value * c_value))) / (2 * a_value) #x1 = -b/2a
+    print("This equation has 1 solution: x=", x1)
+elif my_discriminant > 0:
+    x1 = ((-b_value) + (math.sqrt(b_value ** 2 - 4 * a_value * c_value))) / (2 * a_value)
+    x2 = ((-b_value) - (math.sqrt(b_value ** 2 - 4 * a_value * c_value))) / (2 * a_value)
+    print("This equation has 2 solutions: x1=", x1, "x2=", x2)
 else:
-    x1 = (-b_value)
+    print("This equation has no real solutions")
+
+
+
+
+

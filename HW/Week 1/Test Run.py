@@ -70,7 +70,9 @@ for val in list:
         num = num + val
 print(num)"""
 
-for num in range(250, 300):
+"""for num in range(250, 300):
     sum = num + num
-    print('The sum of',num,'is',sum)
-    
+    print('The sum of',num,'is',sum)"""
+
+import math
+print(math.sqrt(4))
