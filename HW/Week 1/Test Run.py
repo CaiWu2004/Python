@@ -74,5 +74,26 @@ print(num)"""
     sum = num + num
     print('The sum of',num,'is',sum)"""
 
+"""import math
+print(math.sqrt(4))"""
+
+"""sum_select = 0
+
+for num in range(99, 401):
+    if (num % 5 == 0) or (num % 7 == 0):
+        print(num, "+", num, "=" ,num + num)
+    sum_select += num
+"""
 import math
-print(math.sqrt(4))
+
+count_odds = 0
+count_evens = 0
+count_squares = 0
+
+for num in range(3, 31):
+    if num % 2 == 0:
+        count_evens += 1
+    elif num % 2 != 0:
+        count_odds += 1
+    if math.sqrt(num) % 1 == 0.0:
+        count_squares += 1
