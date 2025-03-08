@@ -85,10 +85,82 @@ print(year % 4 == 0)"""
 
 """1) Create a program that calculates the 
 volume of a cylinder given its radius and height."""
+import math
+"""radius = int(input("Enter the radius of the cylinder: "))
+height = int(input("Enter the height of the cylinder: "))
+
+volumn = math.pi * ((radius**2 ) * height)
+print(volumn)"""
 
 """2) Implement a program that 
 converts temperature from Celsius to 
 Fahrenheit using the formula: `F = (C * 9/5) + 32`."""
 
+"""celsius = int(input("Enter the temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("The temperature in Fahrenheit is:", fahrenheit)"""
+
+
 """3) Write a Python program that calculates 
 the hypotenuse of a right-angled triangle using the Pythagorean theorem."""
+
+"""import math
+
+opposite = int(input("Enter angle oppisite to the hypothenuse of the right-triangle: "))
+adjcent = int(input("Enter angle adjcent to the hypothenuse of the right-triangle: "))
+
+hypothenuse = math.sqrt(adjcent ** 2 + opposite ** 2)
+print(hypothenuse)"""
+
+#Mixed Problems:
+
+#1)
+"""
+Write a program that checks if a given year 
+is a leap year and if a number is divisible by both 3 and 5.
+"""
+
+"""def leap_year(year):
+
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+        return True
+    else:
+        return False
+
+def check_divisible(num):
+
+    if num % 3 == 0 and num % 5 == 0:
+        return True
+    else:
+        return False
+
+print(leap_year(2020))
+print(check_divisible(2020))
+
+
+year = int(input("Enter the year: "))
+leap_year= year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+print(leap_year)
+
+num = int(input("Enter a number: "))
+divisable = num % 3 == 0 and num % 5 == 0
+print(divisable)"""
+
+#2)
+"""
+Create a simple calculator program that takes two numbers and an 
+operation (+, -, *, /) as input and performs the calculation.
+"""
+
+"""num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+operator = input("Enter operation(+, -, *, /): ")
+
+if operator == "+":
+    print(num1 + num2)
+elif operator == "-":
+    print(num1 - num2)
+elif operator == "*":
+    print(num1 * num2)
+elif operator == "/":
+    print(num1 / num2)"""

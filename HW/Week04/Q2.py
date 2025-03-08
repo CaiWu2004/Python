@@ -7,7 +7,8 @@ with anyone else, in conformance with the NYU School of engineering Policies and
 """
 
 #2) Must be funny in the rich man's world
-
+greatest = -1
+player = 0
 players = int(input("How many players played this round? "))
 while players <= 0:
      players = int(input("Invalid input. How many players played this round? "))
@@ -19,10 +20,13 @@ for i in range(0, players):
         bank += float(asset)
         asset = input("Enter the value of property/asset, or Done to finish: ")
     text = 'Player {} has ${:.2f} bank assets.'
-    print(text.format(players-2, bank))
-    players += 1
+    print(text.format( i+ 1 , bank))
+    if bank >= greatest: #if player 1 and the player 2 is tie, player 2 wins
+        greatest = bank
+        player = i+1
 
 
+print(f"Congratulations, player {player}! You won with ${greatest}!")
 
 
 

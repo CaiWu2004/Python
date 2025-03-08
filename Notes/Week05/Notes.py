@@ -116,7 +116,7 @@ elif num1.count(num1) == num2.count(num2):
 else:
     print(num2)"""
 
-phrase = 'Python'
+"""phrase = 'Python'
 
 if len(phrase) < 7:
     print("short")
@@ -124,4 +124,4 @@ elif len(phrase) > 20:
     print("long")
 else:
     print("medium")
-
+"""
