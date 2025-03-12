@@ -1,6 +1,6 @@
 #1)Programming Aliens Language
 
-def main():
+"""def main():
 
     #get the user input
     human_word = input("Enter a human word: ")
@@ -24,6 +24,29 @@ def main():
     print("\nTranslated word:")
     print(f"\t{alien_word}")
 
-main()
+main()"""
 
 #2)
+
+cake = str(input("Cake flavor: "))
+ingredient1 = str(input("First Ingredient: "))
+ingredient2 = str(input("Second Ingredient: "))
+ingredient3 = str(input("Third Ingredient: "))
+
+
+combo1 = cake[0:3] + ingredient1[-3:]
+combo2 = cake[0:3] + ingredient2[-3:]
+combo3 = cake[0:3] + ingredient3[-3:]
+combo1 = combo1.upper()
+
+
+print(combo1)
+print(combo2)
+
+
+
+
+
+
+
+
